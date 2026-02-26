@@ -7,4 +7,8 @@ contactRouter.post("/identify", (req, res) =>
   contactController.identify(req, res)
 );
 
+contactRouter.get("/info", (req, res) =>
+  contactController.getAllContacts(req, res)
+);
+
 export default contactRouter;

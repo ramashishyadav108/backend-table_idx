@@ -21,6 +21,13 @@ export class ContactRepository {
     });
   }
 
+  async findAll(): Promise<Contact[]> {
+    return prismaClient.contact.findMany({
+      where: { deletedAt: null },
+      orderBy: { createdAt: "asc" },
+    });
+  }
+
   async findById(id: number): Promise<Contact | null> {
     return prismaClient.contact.findUnique({ where: { id } });
   }
