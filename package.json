@@ -4,6 +4,7 @@
   "main": "dist/server.js",
   "scripts": {
     "build": "npx prisma generate && tsc",
+    "vercel-build": "npx prisma generate",
     "start": "node dist/server.js",
     "dev": "npx ts-node src/server.ts",
     "prisma:generate": "npx prisma generate",
