@@ -82,5 +82,5 @@ At least one of `email` or `phoneNumber` must be provided.
 
 ## Hosted Endpoint
 
-> **URL:** `https://your-hosted-url.com/identify`
+> **URL:** `https://backend-table-idx.vercel.app/identify`
 _
